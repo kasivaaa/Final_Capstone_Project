@@ -1,6 +1,6 @@
 ### Final_Capstone_Project
 
-Predicting Child Personality Traits Using Household Structure and Parental Behaviour: A Machine Learning Approach
+Predicting Child Personality Traits Using Household Structure and parental behavior
 ### 1. Project Overview
 
 This project investigates whether household structure, parental behaviour, socioeconomic conditions, and other developmental factors can be used to predict personality traits in young adulthood using machine learning.
