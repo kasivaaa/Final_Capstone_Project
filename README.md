@@ -1,7 +1,7 @@
 ### Election Violence Risk & Hate Speech Early-Warning System
 #### 1. Project Overview
 
-The Election Violence Risk & Hate Speech Early-Warning System is a machine learning project designed to identify geographic areas in Kenya that may be vulnerable to electoral violence. The system integrates historical conflict incidents, political text, sentiment and hate-speech indicators, demographic/economic data, and temporal trends to generate an early-warning risk assessment.
+The Election Violence Risk & Hate Speech Early-Warning System is a machine learning project designed to identify geographic areas in Kenya that may be vulnerable to electoral violence. The system integrates historical conflict incidents, political text, sentiment and hate-speech indicators, demographic/economic data, real time text streams from platforms like X, Instagram and TikTok, specifically filtering for localized swahili,sheng and english political words and temporal trends to generate an early-warning risk assessment.
 
 The goal is to support proactive monitoring and peace-building efforts by identifying emerging risk patterns before they escalate.
 
