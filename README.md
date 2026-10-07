@@ -1,101 +1,65 @@
-### Final_Capstone_Project
+### Election Violence Risk & Hate Speech Early-Warning System
+#### 1. Project Overview
 
-Predicting Child Personality Traits Using Household Structure and parental behavior
-### 1. Project Overview
+The Election Violence Risk & Hate Speech Early-Warning System is a machine learning project designed to identify geographic areas in Kenya that may be vulnerable to electoral violence. The system integrates historical conflict incidents, political text, sentiment and hate-speech indicators, demographic/economic data, and temporal trends to generate an early-warning risk assessment.
 
-This project investigates whether household structure, parental behaviour, socioeconomic conditions, and other developmental factors can be used to predict personality traits in young adulthood using machine learning.
+The goal is to support proactive monitoring and peace-building efforts by identifying emerging risk patterns before they escalate.
 
-The project will use longitudinal data from the National Longitudinal Study of Adolescent to Adult Health (Add Health). Information collected during adolescence, such as family structure and parent-child relationships, will be used to predict Big Five personality traits measured later in young adulthood.
+#### 2. Problem Statement
 
-The five personality traits are:
+Political polarization, online hate speech, misinformation, and historical conflict patterns can contribute to increased tensions during election periods. However, identifying areas where these warning signals are increasing can be challenging.
 
-Openness
-Conscientiousness
-Extraversion
-Agreeableness
-Neuroticism
+This project aims to develop a data-driven system that analyzes multiple sources of information and predicts the electoral violence risk level for a geographic area.
 
-The purpose is not to determine whether being raised in a single-parent or two-parent household causes a particular personality. Instead, the project will investigate whether household structure and parental behaviour provide meaningful predictive information about later personality.
+### 3.Target Variable
 
-### 2. Problem Statement
+Primary Target: violence_risk_level
 
-Children grow up in different family environments, including single-parent, two-parent, and blended households. They also experience different levels of parental support, communication, involvement, and interaction.
+0 — Low Risk
+1 — Moderate Risk
+2 — High Risk
 
-However, household structure alone may not explain differences in personality. Other factors such as socioeconomic circumstances, parental behaviour, and individual characteristics may also contribute.
+The primary task is therefore a multiclass classification problem.
 
-Therefore, this project asks:
+A secondary regression task may be explored to predict the number of incidents expected within a future time period.
 
-How effectively can household structure, parental behaviour, and other developmental factors predict Big Five personality traits in young adulthood?
+### 4.Data Sources
 
-### 3. Main Objective
+The project may integrate:
 
-To develop and evaluate machine learning models that predict Big Five personality traits using household structure, parental behaviour, socioeconomic characteristics, and other relevant developmental factors.
+Historical electoral/conflict incidents from sources such as ACLED or Ushahidi
+Publicly available political/news text
+Swahili, Sheng, and English political language data
+Kenyan demographic and socioeconomic indicators from KNBS
+Geographic and temporal information
+Methodology
 
-### 4. Research Questions
-Is household structure associated with differences in Big Five personality traits?
-Which parental behaviours provide the strongest predictive information about personality?
-Does parental behaviour provide more predictive information than household structure alone?
-Does household structure still contribute useful predictive information after other factors are considered?
-Which machine learning model provides the best predictions of personality traits?
+#### 5. Machine learning Models used 
 
-### 5. Methodology
+The main classification models will include:
 
-The project will follow these main stages:
-
-Data Understanding → Data Cleaning → Exploratory Data Analysis → Feature Engineering → Statistical Analysis → Machine Learning → Model Evaluation → Explainable AI → Streamlit Deployment
-
-Several regression models will be compared, including:
-
-Linear Regression
-Ridge Regression
+Logistic Regression
 Random Forest
-Potentially XGBoost
+XGBoost
 
-Dimensionality-reduction techniques such as PCA and Isomap will also be investigated where appropriate.
+These models will be compared using precision, recall, F1-score, ROC-AUC, and confusion matrices.
 
-Model performance will be evaluated using:
+Advanced Machine Learning Models
 
-MAE
-RMSE
-R²
+Advanced techniques will include:
 
-Explainable AI techniques such as feature importance and SHAP will be used to understand which factors contribute most to the predictions.
+Transformer-based NLP such as BERT/multilingual BERT
+ARIMA and SARIMA for time-series modelling
+LSTM for deep-learning time-series prediction
+K-Means clustering
+Isolation Forest for anomaly detection
+PCA/UMAP for dimensionality reduction
+Hyperparameter tuning
+SHAP for explainable AI
+Deployment
 
-### 6. Proposed Modelling Approach
+The final system will be deployed using Streamlit with an interactive geographic dashboard. The dashboard will display predicted risk levels, trends, major warning indicators, and geographic risk patterns across Kenya.
 
-The project will compare models using progressively richer information:
+Expected Outcome
 
-Model 1: Household structure only
-
-↓
-
-Model 2: Household structure + demographics
-
-↓
-
-Model 3: Household structure + demographics + parental behaviour
-
-↓
-
-Model 4: Household structure + parental behaviour + socioeconomic and other relevant factors
-
-This will allow the project to investigate whether household structure provides additional predictive value beyond parenting and other environmental factors.
-
-### 7. Expected Outcome
-
-The final system will determine:
-
-Whether family and parental characteristics contain useful predictive information about personality.
-Which factors are most strongly associated with the predicted personality traits.
-Which machine learning approach performs best.
-Whether adding parental behaviour and socioeconomic factors improves predictions compared with using household structure alone.
-
-A Streamlit application will be developed to demonstrate the final predictive model and present the findings interactively.
-
-### 8. Ethical Consideration
-
-The project will focus on prediction and association, not causation.
-
-The model will not be presented as a psychological diagnostic tool or as evidence that a particular household structure causes a specific personality.
-
-Its purpose is to demonstrate how machine learning can be responsibly applied to psychological and developmental research.
+The final system will provide an interpretable early-warning framework that combines NLP, machine learning, advanced machine learning, time-series analysis, anomaly detection, geospatial analysis, and explainable AI to identify emerging electoral violence risk patterns and allowing peace building NGOs and local administrators to deploy dialogue and monitoring teams proactively
