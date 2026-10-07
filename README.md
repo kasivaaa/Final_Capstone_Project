@@ -39,12 +39,14 @@ Methodology
 The main classification models will include:
 
 Logistic Regression
+
 Random Forest
+
 XGBoost
 
 These models will be compared using precision, recall, F1-score, ROC-AUC, and confusion matrices.
 
-Advanced Machine Learning Models
+### 6.Advanced Machine Learning Models
 
 Advanced techniques will include:
 
@@ -60,6 +62,6 @@ Deployment
 
 The final system will be deployed using Streamlit with an interactive geographic dashboard. The dashboard will display predicted risk levels, trends, major warning indicators, and geographic risk patterns across Kenya.
 
-Expected Outcome
+### 7.Expected Outcome
 
 The final system will provide an interpretable early-warning framework that combines NLP, machine learning, advanced machine learning, time-series analysis, anomaly detection, geospatial analysis, and explainable AI to identify emerging electoral violence risk patterns and allowing peace building NGOs and local administrators to deploy dialogue and monitoring teams proactively
