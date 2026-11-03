@@ -1,0 +1,10 @@
+{
+    "model": "TF-IDF + Logistic Regression",
+    "test_accuracy": 0.6864139020537124,
+    "test_records": 1266,
+    "labels": [
+        0,
+        1,
+        2
+    ]
+}
